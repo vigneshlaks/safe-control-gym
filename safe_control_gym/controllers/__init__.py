@@ -6,6 +6,10 @@ register(idx='lqr',
          entry_point='safe_control_gym.controllers.lqr.lqr:LQR',
          config_entry_point='safe_control_gym.controllers.lqr:lqr.yaml')
 
+register(idx='random',
+         entry_point='safe_control_gym.controllers.random_controller.random_controller:RandomController',
+         config_entry_point='safe_control_gym.controllers.random_controller:random_controller.yaml')
+
 register(idx='ilqr',
          entry_point='safe_control_gym.controllers.lqr.ilqr:iLQR',
          config_entry_point='safe_control_gym.controllers.lqr:ilqr.yaml')
@@ -53,3 +57,5 @@ register(idx='rap',
 register(idx='mpc_acados',
          entry_point='safe_control_gym.controllers.mpc.mpc_acados:MPC_ACADOS',
          config_entry_point='safe_control_gym.controllers.mpc:mpc_acados.yaml')
+
+
